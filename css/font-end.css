@@ -1,0 +1,215 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* TODO Background-Color */
+.bg-black {
+    background-color: black;
+}
+#movie a,
+#promotion a,
+#news a {
+    text-decoration: none;
+}
+.fontDetail {
+    font-size: 12px;
+}
+.text-title {
+    font-size: 16px;
+    color: black;
+}
+.card {
+    height: 100%;
+}
+hr {
+    opacity: 1 !important;
+}
+.container {
+    max-width: 1100px !important;
+}
+#news .text-crop {
+    -webkit-line-clamp: 2;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.text-select {
+    color: #7a838b;
+}
+.text-select:hover {
+    color: black;
+}
+.text-select.active {
+    color: black !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .btnForm {
+        text-align: left !important;
+    }
+
+    .titleDate {
+        display: none;
+    }
+
+    .text-title {
+        font-size: 12px;
+    }
+
+    .fontDetail {
+        font-size: 10px;
+    }
+}
+
+
+/* //TODO การซื้อตั๋วต่างๆ */
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    color: gray;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div:hover {
+    color: black;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div.active,
+.MultiCarousel .MultiCarousel-inner a.active>div {
+    color: black;
+    font-weight: 600;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+}
+
+.MultiCarousel .leftLst {
+    left: 0;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    pointer-events: none;
+    display: none;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    background: white;
+    height: 100%;
+    top: 0;
+    display: block;
+}
+
+.selectTime a:hover {
+    color: white !important;
+    background: black !important;
+}
+
+.selectSeat .cinema {
+    display: block;
+}
+
+.selectSeat .chair {
+    cursor: pointer;
+    width: 50px;
+}
+.selectSeat .user {
+    width: 50px;
+}
+
+.mov-name {
+    font-size: 20px;
+}
+
+.tic-name {
+    font-size: 20px;
+}
+.pro-name {
+    font-size: 24px;
+}
+.new-name {
+    font-size: 24px;
+}
+
+.mov-detail {
+    font-size: 16px;
+}
+.tic-detail {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .mov-name {
+        font-size: 16px;
+    }
+    .tic-name {
+        font-size: 16px;
+    }
+    .pro-name {
+        font-size: 18px;
+    }
+    .new-name {
+        font-size: 18px;
+    }
+
+    .mov-detail {
+        font-size: 14px;
+    }
+
+    .tic-detail {
+        font-size: 14px;
+    }
+    .selectSeat .chair {
+        width: 30px;
+    }
+    .selectSeat .user {
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .selectSeat .cinema {
+        display: none;
+    }
+
+    .selectSeat .chair {
+        width: 30px;
+    }
+    .selectSeat .user {
+        width: 30px;
+    }
+
+    .tic-name {
+        font-size: 14px;
+    }
+
+    .tic-detail {
+        font-size: 12px;
+    }
+}
