@@ -1,7 +1,7 @@
-#Movie
+# Movie
 [DEMO](https://moive-lompong.000webhostapp.com/)
 
-###Features
+### Features
 * PHP
 * HTML
 * CSS [Bootstrap]
